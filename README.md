@@ -51,14 +51,15 @@ The software is the following path "server/index.js" and this is the command for
 
 
 #3) Mplayer
-###Install
+
+### 3.1) Install
 Inside of [Open SVC Decoder](http://sourceforge.net/projects/opensvcdecoder/), there is a mplayer which can be installed to play the bit stream files (such as y4m and yuv format files). The step for installing the software are the followings:
 
 	./configure
 	./configure --enable-svc
 	make install
 
-### 3.1) Usage
+### 3.2) Usage
 To play a source file, for example to play a video file named "a.y4m", run:
 
 	mplayer a.y4m
@@ -76,7 +77,7 @@ To play a extracted svc file, just run:
     mplayer -fps 25 out_lay0.264
     
 
-# Video files
+#4) Video files
 Video resources is y4m Video Sequences and some source files are in folder "/svc/server/video_data". Other source files can also be downloaded from [Xiph.org Video Test Media](http://media.xiph.org/video/derf/). 
 
 The y4m format files can be converted to yuv format by using "ffmpeg" package, for example to convert a "akiyo_qcif.y4m" to "akiyo_qcif.yuv" can simply run:
@@ -84,10 +85,3 @@ The y4m format files can be converted to yuv format by using "ffmpeg" package, f
     ffmpeg -i akiyo_qcif.y4m akiyo_qcif.yuv
     
 Also, there are some online example of SVC encoded files which can be used, check [this](http://sourceforge.net/projects/opensvcdecoder/files/Video%20Streams/).
-
- 
-
-
-
-
-
