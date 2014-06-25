@@ -3,5 +3,57 @@ svc_dash
 
 Project that try to solve the challenges during the client-server uploading and server-client downloading of mobile videos proposing a new approach involving SVC and DASH with the final goal to improve content availability by reducing the end-to-end delay from the recording time of the modile videos to the publishing of the first segment of the encoded version of the video in the Server in order to be available and playable on other devices.
 
-# Video producer and uploader
-The video producer and uploader uses the [JSVM](http://www.hhi.fraunhofer.de/de/kompetenzfelder/image-processing/research-groups/image-video-coding/svc-extension-of-h264avc/jsvm-reference-software.html) library to encode and decode the video file (mostly yuv file). 
+#1) Video producer and uploader
+The video producer and uploader uses the [JSVM](http://www.hhi.fraunhofer.de/de/kompetenzfelder/image-processing/research-groups/image-video-coding/svc-extension-of-h264avc/jsvm-reference-software.html)(Joint Scalable Video Model) software that is the reference software for the Scalable Video Coding (SVC) project of the Joint Video Team (JVT) of the ISO/IEC Moving Pictures Experts Group (MPEG) and the ITU-T Video Coding Experts Group (VCEG).
+
+###1.1) Building the JSVM software
+In order to build and produce the first steps with the JSVM encoder a '.doc' documentation file is in the following path "/svc/server/jsvm/SoftwareManual.doc".
+The commands for building this software on Linux O.S. are the following:
+	
+	cd JSVM/H264AVCExtension/build/linux
+	make
+
+###1.2) Encoder and Decoder example
+Configure files examples are in folder "/svc/server/jsvm/example/". For semplicity sake is reccomended to copy the configuration files to "/svc/server/jsvm/bin". 
+The steps for encoding a '.yuv' file to be multiple layers are the followings:
+
+	cd /svc/server/jsvm/bin
+	./H264AVCEncoderLibTestStatic -pf encoder.cfg
+
+After that, a .264 file will be generated, which is a SVC encoded video. 
+
+###1.3) SVC file extraction using the JSVM parser
+The output SVC file generated in the above process can be directly played in mplayer (check the detail in "Mplayer" section). And also it can be parsed to seperate .264 files representing the base layer plus several enhanched layers.
+
+The extraction step is the following:
+    
+    ./BitStreamExtractorStatic input_file.264  output_file.264 -e widhtxheight@frequency:bitrate 
+
+for example:
+
+    ./BitStreamExtractorStatic out.264 out_lay2.264 -e 704x576@60:2310
+
+###1.4) SVC file chunking, '.mpd' file generation and file uploading 
+The client in order to send the '.264/SVC' file according to the DASH protocol has to provide the SVC layers in multiple representations.
+Normally an SVC bitstream has enhancement layers located at each frame. For SVC-DASH compatible file each temporal segment have to be splitted into multiple chunks, one per layer. In such a way each of the chunks contains several frames for one layer.
+So at first the client software has to demux the SVC bitstream into chunks, one per layer and at the same time has to generate an '.mpd' file.
+After this step an HTTP connection is opened to the server specified by the user and first the '.mpd' and then all the chuncks are sent towared the server.
+The software is in the following path "uploading_client.py" and in order to use it those are the parameter that have to be entered: 
+	
+	client_upload [path filename] [url server] [#frame_per_segment] [resolution_width resolution_height]
+ 
+
+
+#1) Server
+A web server is deveopeld using the framework node.js and is composed in two modules, a file upload server listening the port 8888 and a static file server listeng the posrt 8080 .
+The software is the following path "server/index.js" and this is the command for starting it:
+	node index.js
+
+
+
+ 
+
+
+
+
+
