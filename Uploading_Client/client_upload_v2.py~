@@ -110,7 +110,7 @@ except httplib.HTTPException, e:
 	quit()
 except Exception:
 	import traceback
-	print "generic exception"
+	print"Excpetion Arise"	
 	#print "generic exception: " + traceback.format_exc()
 	quit()
 

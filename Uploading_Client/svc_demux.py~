@@ -152,6 +152,6 @@ mpd+= """        </AdaptationSet>
 </MPD>
 """
 
-
+print(mpd)
 with open(sys.argv[1] + '.mpd', 'w') as fpOut:
     fpOut.write(mpd)
