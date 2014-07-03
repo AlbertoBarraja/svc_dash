@@ -141,13 +141,21 @@ for i in range(0,numSeg):
 		segName = segTable[1][0]
 	currBW = getBandWith(segName, httpServer)
 	threshold = 0
+	print "=================================================="
+	print "uploading segment: " + str(i)
+	print "current bandwitdth: " + str(currBW/1000) + "Kb/s"
 	for j in range(0,layersNum):
 		threshold = threshold + layerBW[j]
 		if(currBW>=threshold):
 			selectedLayer=j
+		elif j == 0:
+			selectedLayer = j
+			break 
 		else:
 			break
+	print "selected layer: " + str(selectedLayer)
 	for k in range(0,selectedLayer+1):
 		segName = segTable[k][i]
 		currBW = getBandWith(segName, httpServer)
+	print "upload segment " + str(i) + " competed"
 
