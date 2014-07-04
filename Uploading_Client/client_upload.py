@@ -1,16 +1,19 @@
 import subprocess, sys
 import httplib
 import urllib2
+import datetime
 import time
 import os.path
 from urlparse import urlparse
 from xml.dom.minidom import parseString
+from logger.loggerinitializer import *
 
 if(len(sys.argv)<6):
 	print("ERROR:Wrong number of argument.")
 	print("Usage: client_upload [path/]filename [url]server #frame_per_segment resolution_width resolution_height")
 	quit()
 
+initialize_logger('/home/barraja1/thesis_repository/Uploading_Client/logger')
 
 bitstreamName = sys.argv[1]
 httpServer = sys.argv[2]
@@ -62,14 +65,19 @@ def getBandWith(segName, httpServer):
 	try: 
     		response = urllib2.urlopen(url, segment)
 	except urllib2.HTTPError, e:
-    		print "HTTPError = " + str(e.code)
+		message = str(datetime.datetime.now()) + "	HTTPError :	" + str(e.code)
+		logging.error(message)
 	except urllib2.URLError, e:
-    		print "URLError = " + str(e.reason)
+		message = str(datetime.datetime.now()) + "	URLError :	" + str(e.reason)
+		logging.error(message)
 	except httplib.HTTPException, e:
-    		print"HTTPException"
+		message = str(datetime.datetime.now()) + "	HTTPException"
+		logging.error(message)   		
 	except Exception:
     		import traceback
-    		print('generic exception: ' + traceback.format_exc())
+		message = str(datetime.datetime.now()) + "	generic exception:	 "
+    		#message = str(datetime.datetime.now()) + "	generic exception:	 " + traceback.format_exc())
+		logging.error(message)
 	
 	t2 = time.time()
 	#print response.read()
@@ -99,19 +107,25 @@ dom = parseString(mpd)
 url = httpServer+'/'+mpdName
 try: 
     	response = urllib2.urlopen(url, mpd)
+	message = str(datetime.datetime.now()) + "	.mpd file sent successfully"
+	logging.info(message)
 except urllib2.HTTPError, e:
-	print "HTTPError = " + str(e.code)
+	message = str(datetime.datetime.now()) + "	HTTPError :	" + str(e.code)
+	logging.error(message)
 	quit()	
 except urllib2.URLError, e:
-	print "URLError = " + str(e.reason)
+	message = str(datetime.datetime.now()) + "	URLError :	" + str(e.reason)
+	logging.error(message)
 	quit()
 except httplib.HTTPException, e:
-	print"HTTPException"
+	message = str(datetime.datetime.now()) + "	HTTPException"
+	logging.error(message)
 	quit()
 except Exception:
 	import traceback
-	print "generic exception"
-	#print "generic exception: " + traceback.format_exc()
+	message = str(datetime.datetime.now()) + "	generic exception:	 "
+    	#message = str(datetime.datetime.now()) + "	generic exception:	 " + traceback.format_exc())
+	logging.error(message)
 	quit()
 
 #print response.read()
@@ -121,6 +135,7 @@ layerID = []
 layerBW = []
 layerList = ""
 layersNum = int(getNumberLayers(layerID, layerBW ,layerList))
+#print layerBW
 
 #--- taking layers' segments iformation ---#
 for d1 in range(0,layersNum):
@@ -139,11 +154,11 @@ for d1 in range(0,layersNum):
 for i in range(0,numSeg):
 	if i==0:
 		segName = segTable[1][0]
-	currBW = getBandWith(segName, httpServer)
+		currBW = getBandWith(segName, httpServer)
+		message = str(datetime.datetime.now()) + "	uploading segment [" + str(i) + "] | layer [0] completed | current bandwitdth: [" + str(currBW/1000) + "Kb/s]"
+		logging.info(message)
+				
 	threshold = 0
-	print "=================================================="
-	print "uploading segment: " + str(i)
-	print "current bandwitdth: " + str(currBW/1000) + "Kb/s"
 	for j in range(0,layersNum):
 		threshold = threshold + layerBW[j]
 		if(currBW>=threshold):
@@ -153,9 +168,15 @@ for i in range(0,numSeg):
 			break 
 		else:
 			break
-	print "selected layer: " + str(selectedLayer)
+	#print "selected layer: " + str(selectedLayer)
+	
 	for k in range(0,selectedLayer+1):
-		segName = segTable[k][i]
-		currBW = getBandWith(segName, httpServer)
-	print "upload segment " + str(i) + " competed"
+		if (i==0) and (k==0):
+			continue
+		else:
+			segName = segTable[k][i]
+			currBW = getBandWith(segName, httpServer)
+		message = str(datetime.datetime.now()) + "	uploading segment [" + str(i) + "] | layer [" + str(k) + "] completed | current bandwitdth: [" + str(currBW/1000) + "Kb/s]"
+		logging.info(message)
+	print " "
 
