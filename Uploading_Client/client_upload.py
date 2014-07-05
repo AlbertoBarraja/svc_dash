@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import subprocess, sys
 import httplib
 import urllib2
@@ -7,30 +9,28 @@ import os.path
 from urlparse import urlparse
 from xml.dom.minidom import parseString
 from logger.loggerinitializer import *
+from svc_demux import *
 
-if(len(sys.argv)<6):
+if(len(sys.argv)<7):
 	print("ERROR:Wrong number of argument.")
-	print("Usage: client_upload [path/]filename [url]server #frame_per_segment resolution_width resolution_height")
+	print("Usage: \n",sys.argv[0]," [path/filename] [url server] [frame per segment] [resolution width] [resolution_height] [frame rate]")
 	quit()
 
 initialize_logger('/home/barraja1/thesis_repository/Uploading_Client/logger')
 
-bitstreamName = sys.argv[1]
-httpServer = sys.argv[2]
-framePerSegment= sys.argv[3]
-resWidth = sys.argv[4]
-resHeight =sys.argv[5]
+bitstreamName = sys.argv[1]	# e.g. testVideo.264
+httpServer = sys.argv[2]	# e.g. http://localhost:8888/video_folder
+framePerSegment= sys.argv[3]	# e.g. 2 second fragment for 25 fps -> framesPerSegment = 50
+resWidth = sys.argv[4]		# e.g. 352
+resHeight = sys.argv[5]		# e.g. 288
+fps = sys.argv[6]		# e.g. 25 
+baseURL = './'
 
 #-------------------------------- FUNCTIONS -------------------------------------#
 
 #demux function
-def demuxVideo(bitstreamName,framePerSegment):
-	command = ["python", "svc_demux.py"]
-	command.append(bitstreamName)
-	command.append(framePerSegment)
-	command.append(resWidth)
-	command.append(resHeight)
-	subprocess.call(command)
+def demuxVideo(bitstreamName, framePerSegment, resWidth, resHeight, fps, baseURL ):
+	getChunks(bitstreamName, framePerSegment, resWidth, resHeight, fps, baseURL )
 	mpdName = bitstreamName+'.mpd'
 	return mpdName
 
@@ -98,7 +98,7 @@ if (fileExtension != "264"):
 	quit()
 
 #--- Bitstream demuxed and .mpd and .dom file generation  ---#
-mpdName = demuxVideo(bitstreamName,framePerSegment)
+mpdName = demuxVideo(bitstreamName, framePerSegment, resWidth, resHeight, fps, baseURL)
 mpd= getMPD(mpdName)
 mpdLenght = os.path.getsize(mpdName)
 dom = parseString(mpd)
