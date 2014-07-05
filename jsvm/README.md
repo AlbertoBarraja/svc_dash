@@ -1,4 +1,4 @@
-### JSVM Reference Software
+# JSVM Reference Software
 The JSVM (Joint Scalable Video Model) software is the reference software for the Scalable Video Coding (SVC) project of the Joint Video Team (JVT) of the ISO/IEC Moving Pictures Experts Group (MPEG) and the ITU-T Video Coding Experts Group (VCEG). Since the SVC project is still under development, the JSVM Software as is also under development and changes frequently.
 The JSVM software is written in C++ and is provided as source code. Section 1.1 describes how the JSVM software can be obtained via a CVS server.
 Section 1.2 describes how the JSVM software can be build on Win32 and Linux platforms.
