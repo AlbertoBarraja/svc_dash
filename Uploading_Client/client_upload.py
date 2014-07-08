@@ -35,7 +35,7 @@ def demuxVideo(bitstreamName, framePerSegment, resWidth, resHeight, fps, baseURL
 	return mpdName
 
 
-#create DOM file function
+#create MPD file function
 def getMPD(mpdName):
 	tmp = open(mpdName)
 	mpd = tmp.read()
