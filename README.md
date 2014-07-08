@@ -10,7 +10,7 @@ The device uses the [JSVM](http://www.hhi.fraunhofer.de/de/kompetenzfelder/image
 
 
 #2) Video uploader client
-Client in order to send the '.264' encoded video file according to the DASH protocol, it has to provide the file in multiple representations and an '.mpd' file that describe the multimeda content.
+The client in order to send the '.264' encoded video file according to the DASH protocol, it has to provide the file in multiple representations and an '.mpd' file that describe the multimeda content.
 SVC can be deployed in DASH as follow, each representation contains an SVC layer.Normally an SVC bitstream has enhancement layers located at each frame. For an SVC-DASH compatible file each temporal segment have to be splitted into multiple chunks, one per layer. In such a way each of the chunks contains several frames for one layer. Then agter this the '.mpd' file is generated according to the information of the generated chunks.
 After those operations the video uploader client send the video chunks through HTTP post messages selecting the layers per segment according to the bandwidth available.
 
@@ -23,7 +23,7 @@ A web server deveopeld using the framework node.js and is composed in 3 modules:
 
 
 #4)Video downloader client
-Client in order to download segment by segment the whole video file according to the available bandwidth selecting the most suitable representation (layers) for the segment that has to be dowloaded,  then muxed to the bitstream and finally  decoded and played in a compatible video player.
+The client downloads the whole video segment by segment according to the available bandwidth and selecting the most suitable representation (layer) for the segment that has to be dowloaded, then muxes the layers of the segment together and finally decodes and plays it using a specific video player meanwhile the next segment is downloaded.
 
 #5) Video player
 MPlayer is a free software and open source media player.Moreover, this player is compatible with all major operating systems, including Linux and other Unix-like systems, Microsoft Windows and Mac OS X, and has been tested over different platforms. The mplayer version proposed in this project is based on the 31411th revision of the mplayer SVN repository.
