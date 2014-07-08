@@ -28,7 +28,7 @@ function route(filename, response, request) {
 				return;
 			}
 			console.log("ok"); 
-			response.writeHead(200);
+			response.writeHead(200,{"Content-Length":file.length});
 			response.write(file, "binary");
 			response.end();			
 		});
