@@ -8,4 +8,8 @@ The architecture of the server is composed of 3 main modules:
 
 In order to do not force the downloading clients to specify the port in which the server is listening is reccomended execute the following command:
 
-	iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+	sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+
+To start the server go to the "Server" folder in the repository and then execute the following command:
+
+	node bin/www 
