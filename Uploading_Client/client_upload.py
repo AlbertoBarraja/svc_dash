@@ -16,7 +16,7 @@ if(len(sys.argv)<7):
 	print("Usage: \n",sys.argv[0]," [path/filename] [url server] [frame per segment] [resolution width] [resolution_height] [frame rate]")
 	quit()
 
-initialize_logger('/home/barraja1/thesis_repository/Uploading_Client/logger')
+initialize_logger('/home/elechim/Desktop/Uploading_Client/logger')
 
 bitstreamName = sys.argv[1]	# e.g. testVideo.264
 httpServer = sys.argv[2]	# e.g. http://localhost:8888/video_folder
@@ -25,6 +25,10 @@ resWidth = sys.argv[4]		# e.g. 352
 resHeight = sys.argv[5]		# e.g. 288
 fps = sys.argv[6]		# e.g. 25 
 baseURL = './'
+
+layerID = []
+layerBW = []
+layerList = ""
 
 #-------------------------------- FUNCTIONS -------------------------------------#
 
@@ -65,18 +69,18 @@ def getBandWith(segName, httpServer):
 	try: 
     		response = urllib2.urlopen(url, segment)
 	except urllib2.HTTPError, e:
-		message = str(datetime.datetime.now()) + "	HTTPError :	" + str(e.code)
+		message = str(datetime.datetime.now().time()) + "	HTTPError :	" + str(e.code)
 		logging.error(message)
 	except urllib2.URLError, e:
-		message = str(datetime.datetime.now()) + "	URLError :	" + str(e.reason)
+		message = str(datetime.datetime.now().time()) + "	URLError :	" + str(e.reason)
 		logging.error(message)
 	except httplib.HTTPException, e:
-		message = str(datetime.datetime.now()) + "	HTTPException"
+		message = str(datetime.datetime.now().time()) + "	HTTPException"
 		logging.error(message)   		
 	except Exception:
     		import traceback
-		message = str(datetime.datetime.now()) + "	generic exception:	 "
-    		#message = str(datetime.datetime.now()) + "	generic exception:	 " + traceback.format_exc())
+		message = str(datetime.datetime.now().time()) + "	generic exception:	 "
+    		#message = str(datetime.datetime.now().time()) + "	generic exception:	 " + traceback.format_exc())
 		logging.error(message)
 	
 	t2 = time.time()
@@ -84,6 +88,33 @@ def getBandWith(segName, httpServer):
 	timeInterval = float(t2-t1)
 	currentBandwith = float(segLenght*8/(t2-t1))
 	return currentBandwith
+
+#select appropriate to upload function
+def getSegment(i, layersNum, segTable, currBW):	
+	if i==0:
+		segName = segTable[1][0]
+		currBW = getBandWith(segName, httpServer)
+		message = str(datetime.datetime.now().time()) + "	uploading segment [" + str(i) + "] | layer [0] completed | current bandwitdth: [" + str((currBW/8)/1024) + "KB/s]"
+		logging.info(message)
+
+	threshold = 0
+	for j in range(0,layersNum):
+		if (i==0) and (j==0):
+			continue
+		else:
+			threshold = layerBW[j]
+			if(currBW>=threshold) or (j==0):			
+				selectedLayer=j
+				preBW = currBW 
+				segName = segTable[j][i]
+				currBW = getBandWith(segName, httpServer)
+				message = str(datetime.datetime.now().time()) + "	uploading segment [" + str(i) + "] | layer [" + str(j) + "] completed | previous bandwitdth: [" + str((preBW/8)/1024) + "KB/s] | threshold layer [" + str(j) + "] : [ " + str((threshold/8)/1024) + "KB/s] | current bandwitdth: [" + str((currBW/8)/1024) + "KB/s]" 
+				logging.info(message)
+				continue		
+			else:			
+				break
+	print "layer [" + str(selectedLayer) + "] selected"
+	return (selectedLayer, currBW)
 
 #--------------------------------- MAIN ----------------------------------------------#
 #--- check if the file exists  ---#
@@ -107,35 +138,29 @@ dom = parseString(mpd)
 url = httpServer+'/'+mpdName
 try: 
     	response = urllib2.urlopen(url, mpd)
-	message = str(datetime.datetime.now()) + "	.mpd file sent successfully"
+	message = str(datetime.datetime.now().time()) + "	.mpd file sent successfully"
 	logging.info(message)
 except urllib2.HTTPError, e:
-	message = str(datetime.datetime.now()) + "	HTTPError :	" + str(e.code)
+	message = str(datetime.datetime.now().time()) + "	HTTPError :	" + str(e.code)
 	logging.error(message)
 	quit()	
 except urllib2.URLError, e:
-	message = str(datetime.datetime.now()) + "	URLError :	" + str(e.reason)
+	message = str(datetime.datetime.now().time()) + "	URLError :	" + str(e.reason)
 	logging.error(message)
 	quit()
 except httplib.HTTPException, e:
-	message = str(datetime.datetime.now()) + "	HTTPException"
+	message = str(datetime.datetime.now().time()) + "	HTTPException"
 	logging.error(message)
 	quit()
 except Exception:
 	import traceback
-	message = str(datetime.datetime.now()) + "	generic exception:	 "
-    	#message = str(datetime.datetime.now()) + "	generic exception:	 " + traceback.format_exc())
+	message = str(datetime.datetime.now().time()) + "	generic exception:	 "
+    	#message = str(datetime.datetime.now().time()) + "	generic exception:	 " + traceback.format_exc())
 	logging.error(message)
 	quit()
-
 #print response.read()
 
-#--- selective upload ---#
-layerID = []
-layerBW = []
-layerList = ""
 layersNum = int(getNumberLayers(layerID, layerBW ,layerList))
-#print layerBW
 
 #--- taking layers' segments iformation ---#
 for d1 in range(0,layersNum):
@@ -150,33 +175,41 @@ for d1 in range(0,layersNum):
 		segTable[d1][d2]= segName
 		d2 = int(d2+1)
 
+#--- create table storing not uploaded chunks ---#
+notUploadedTable = [ [ 0 for i in range(numSeg) ] for j in range(layersNum) ]
+missing = 0
 #--- selective upload ---#
 for i in range(0,numSeg):
-	if i==0:
-		segName = segTable[1][0]
-		currBW = getBandWith(segName, httpServer)
-		message = str(datetime.datetime.now()) + "	uploading segment [" + str(i) + "] | layer [0] completed | current bandwitdth: [" + str(currBW/1000) + "Kb/s]"
-		logging.info(message)
-				
-	threshold = 0
-	for j in range(0,layersNum):
-		threshold = threshold + layerBW[j]
-		if(currBW>=threshold):
-			selectedLayer=j
-		elif j == 0:
-			selectedLayer = j
-			break 
-		else:
-			break
-	#print "selected layer: " + str(selectedLayer)
-	
-	for k in range(0,selectedLayer+1):
-		if (i==0) and (k==0):
+	if i == 0:
+		currBW = 0
+	selectedLayer, currBW = getSegment(i, layersNum, segTable, currBW)
+
+	#--- saving chunk names not selected ---#		
+	if(selectedLayer <(layersNum-1)):
+		missing = 1
+		selectedLayer = selectedLayer +1;	
+		for x in range(selectedLayer,layersNum):
+			tempName = segTable[x][i]			
+			notUploadedTable[x][i]=tempName
+	print "===================================================================================================================================================================================="
+
+#--- upload remaining segments---#
+for j in range(1,layersNum):
+	print "layer [" + str(j) + "]"
+	for i in range(0,numSeg):	
+		if (notUploadedTable[j][i]==0):
 			continue
 		else:
-			segName = segTable[k][i]
+			print "segment [" + str(i) + "]"
+			threshold = layerBW[j]
+			#if(currBW>=threshold):
+			preBW = currBW 
+			segName = segTable[j][i]
 			currBW = getBandWith(segName, httpServer)
-		message = str(datetime.datetime.now()) + "	uploading segment [" + str(i) + "] | layer [" + str(k) + "] completed | current bandwitdth: [" + str(currBW/1000) + "Kb/s]"
-		logging.info(message)
-	print " "
-
+			message = str(datetime.datetime.now().time()) + "	uploading segment [" + str(i) + "] | layer [" + str(j) + "] completed | previous bandwitdth: [" + str((preBW/8)/1024) + "KB/s] | threshold layer [" + str(j) + "] : [ " + str((threshold/8)/1024) + "KB/s] | current bandwitdth: [" + str((currBW/8)/1024) + "KB/s]" 
+			logging.info(message)
+	print "===================================================================================================================================================================================="	
+print " "
+print notUploadedTable
+print " "
+print "--- END --- "
