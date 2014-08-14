@@ -19,7 +19,7 @@ About the configuration file
 - first line specifies the number of nodes
 - second line specifies the number of archs
 
-the next row depends on the previous two rows
+the following rows depend on the previous two rows
 - one line per node specifing the min treshold and the max treshold of the bitrate for that node
 - one line per arch specifing the min treshold and the max treshold of the probabiliry of moving to another node
 - the first and the last node has ALWAYS 2 archs all the other nodes have ALWAYS 3 archs
