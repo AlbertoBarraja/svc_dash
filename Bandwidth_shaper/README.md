@@ -14,7 +14,7 @@ Deinitialize
 ------------
 `sudo ./netem.sh INAME deinit`
 
-Abot the configuration file
+Abuot the configuration file
 ----------------------------
 - first line specifies the number of nodes
 - second line specifies the number of archs
