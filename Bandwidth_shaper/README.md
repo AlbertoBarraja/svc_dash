@@ -3,8 +3,8 @@ Help
 1. Initialize on interface INAME:
   * `sudo ./netem.sh INAME init`
 
-2. specify configuration file and time period in seconds of switch from one network status to the next one:
-  * `sudo ./netem.sh INAME cpnfig.txt 2`
+2. specify configuration file and time period in seconds of switch from one network status to the next one, as shown in the example below:
+  * `sudo ./netem.sh INAME config.txt 2`
 
 Show netem status
 -----------------
