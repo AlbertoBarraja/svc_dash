@@ -16,7 +16,7 @@ if(len(sys.argv)<7):
 	print("Usage: \n",sys.argv[0]," [path/filename] [url server] [frame per segment] [resolution width] [resolution_height] [frame rate]")
 	quit()
 
-initialize_logger('/home/elechim/Desktop/Uploading_Client/logger')
+initialize_logger('/home/barraja1/thesis_repository/Uploading_Client/logger')
 
 bitstreamName = sys.argv[1]	# e.g. testVideo.264
 httpServer = sys.argv[2]	# e.g. http://localhost:8888/video_folder

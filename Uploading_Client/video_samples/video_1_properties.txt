@@ -1,0 +1,32 @@
+Scalability Type                                   2 spatial enhancements
+Width                                              704  
+Height                                             576  
+Frame rate                                         30.00
+Number of frames                                   500    
+GOPSize                                            8                     
+IntraPeriod                                        32                    
+NumberReferenceFrames                              6                
+BaseLayerMode                                      1
+LoopFilterDisable                                  1 
+InterLayerLoopFilterDisable                        1
+
+
+
+Layer 0:
+  size: 176x144
+  dependency_id = 0
+  temporal_id = [0,3]
+  DQId: 0 
+  
+Layer 1:
+  size: 352x288
+  dependency_id = 1
+  temporal_id = [0,3]
+  DQId: 16 
+  
+  
+Layer 2:
+  size: 704x576
+  dependency_id = 2
+  temporal_id = [0,3]
+  DQId: 32 
