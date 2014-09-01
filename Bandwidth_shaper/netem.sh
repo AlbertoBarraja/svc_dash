@@ -1,6 +1,7 @@
 #!/bin/bash
 INTERFACE="$1"
 CMD="$2"
+RANDOM=42
 
  # exit on errors
 set -e
@@ -193,10 +194,8 @@ elif [[ "$CMD" == "tc" ]]; then
 			#star the bandwith shaper
 			LATENCY="delay 0ms"
 			LOSS="loss 0%"
-
-		echo "$LATENCY"
-    		echo "$LOSS"
-    		echo "$RATE"
+			echo "$(date +%T) $RATE"
+    		echo "$(date +%T) $RATE">>output_2.txt
 
     		tc qdisc change dev "$INTERFACE" root netem $LATENCY $LOSS $RATE
     		tc qdisc change dev "ifb0" root netem $LATENCY $LOSS $RATE

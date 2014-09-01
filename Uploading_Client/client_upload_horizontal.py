@@ -158,14 +158,18 @@ missing = 0
 
 #------------------------------------------ WORKING POINT -------------------------------------------------#
 
-def getNextSize(layer):	
-	current_segment= segment_indexes[layer]
-	next_layer = layer+1
+def getNextSize(layer, segment):	
+	current_segment= int(segment +1)
+	print current_segment
+	next_layer=layer 							#try
+	next_segment=segment_indexes[next_layer]				#try
+	#next_layer = layer+1 						#try
 	#print " layer is"+ str(next_layer)										#DEBUG
-	next_segment = segment_indexes[next_layer]
+	#next_segment = segment_indexes[next_layer] #try
 	#print " segment "+ str(next_layer)+" next_segment "+ str(next_segment)	#DEBUG
 
 	while(next_segment==current_segment):
+		print "curr: "+str(current_segment)+"next:"+str(next_segment)+"layer: "+str(next_layer)
 		next_layer = next_layer +1
 		#print " layer is"+ str(next_layer)										#DEBUG
 		next_segment = segment_indexes[next_layer]
@@ -194,18 +198,15 @@ while(count<numSeg):
 
 	while((session_time<deadline) or (forecast_time <deadline)):
 		currBW, upload_time  = getBandWith(next_name, httpServer)
-		
+
 		uploaded_layer=current_layer
 		time_now=datetime.datetime.now().time()
 		segment_indexes[current_layer] = segment_indexes[current_layer] + 1 
 		session_time = float(session_time + upload_time)
-
-		#message = str(time_now) + "	seg [" + str(count) +"," + str(current_layer) + "] | thr: [" + str (float((int( (layerBW[start_layer]/1024.0) *10000+0.5) )/10000.0)) + "Kb/s] | est BW: [" + str (float((int( (currBW/1024.0) *10000+0.5) )/10000.0)) + " Kb/s] | T seg: ["+str (float((int( upload_time*10000+0.5) )/10000.0))+" s] | T sec: ["+str (float((int( session_time*10000+0.5) )/10000.0))+" s] | T frc seg: ["+str (float((int( tmp_forecast*10000+0.5) )/10000.0))+" s] | T frc sec: ["+str (float((int( forecast_time*10000+0.5) )/10000.0))+" s]"
-		#logging.info(message)
 		print segment_indexes
 		
 		if(current_layer< (layersNum - 1) ):
-			next_length,next_name,current_layer = getNextSize(current_layer)
+			next_length,next_name,current_layer = getNextSize(current_layer, count)
 			tmp_forecast= float(next_length/currBW)
 			forecast_time= float (session_time+(next_length/currBW))
 			message = str(time_now) + "	seg [" + str(count) +"," + str(uploaded_layer) + "] | thr: [" + str (float((int( (layerBW[start_layer]/1024.0) *10000+0.5) )/10000.0)) + "Kb/s] | est BW: [" + str (float((int( (currBW/1024.0) *10000+0.5) )/10000.0)) + " Kb/s] | T seg: ["+str (float((int( upload_time*10000+0.5) )/10000.0))+" s] | T sec: ["+str (float((int( session_time*10000+0.5) )/10000.0))+" s] | T frc seg: ["+str (float((int( tmp_forecast*10000+0.5) )/10000.0))+" s] | T frc sec: ["+str (float((int( forecast_time*10000+0.5) )/10000.0))+" s]"
@@ -223,6 +224,7 @@ while(count<numSeg):
 
 	if(session_time<deadline):
 		leftover= float (deadline-session_time)
+		print "---------------------------------------------------------------"
 		print"wait "+ str(leftover)
 		print "---------------------------------------------------------------"
 		sleep(leftover) # time in seconds
@@ -240,16 +242,11 @@ while(count<numSeg):
 			count = segment_indexes[start_layer]
 		else:
 			break
-	#if (count == numSeg ):
-	#	print "------------------------ LAYER OVER -------------------------"
-	#	deadline=float(0.00000000000001)
-	#	start_layer = start_layer +1
-	#	if (start_layer < layersNum):
-	#			count = segment_indexes[start_layer]
 	
 
 print " "
 time_end=time.time()
 delta =float(time_end-time_start)
 print "total time: "+str(delta)+" s"
+print segment_indexes
 print "--- END --- "
