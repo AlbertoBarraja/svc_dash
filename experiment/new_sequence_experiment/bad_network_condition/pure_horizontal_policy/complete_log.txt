@@ -1,0 +1,696 @@
+executing marcov chain
+----------------
+20:52:59 rate 901kbit
+INFO - 20:53:00.134722	.mpd file sent successfully
+sequence.264.seg0-L0.svc
+[1, 0, 0]
+20:53:00.440546	est BW: [769.58343382 Kb/s] | T seg: [0.2505 s] | T sec: [0.2505 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.74948906898
+----------------
+20:53:01 rate 103kbit
+sequence.264.seg1-L0.svc
+----------------
+20:53:03 rate 367kbit
+[2, 0, 0]
+20:53:04.310889	est BW: [95.1187604722 Kb/s] | T seg: [2.1187 s] | T sec: [2.1187 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg2-L0.svc
+[3, 0, 0]
+20:53:05.023980	est BW: [272.052792848 Kb/s] | T seg: [0.7129 s] | T sec: [0.7129 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.28710412979
+----------------
+20:53:05 rate 110kbit
+sequence.264.seg3-L0.svc
+----------------
+20:53:07 rate 913kbit
+[4, 0, 0]
+20:53:08.288163	est BW: [101.730899249 Kb/s] | T seg: [1.9754 s] | T sec: [1.9754 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.0245831012726
+sequence.264.seg4-L0.svc
+[5, 0, 0]
+20:53:08.647176	est BW: [592.987331996 Kb/s] | T seg: [0.334 s] | T sec: [0.334 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.66599202156
+----------------
+20:53:09 rate 119kbit
+sequence.264.seg5-L0.svc
+----------------
+20:53:11 rate 935kbit
+[6, 0, 0]
+20:53:12.147475	est BW: [110.405683214 Kb/s] | T seg: [1.8322 s] | T sec: [1.8322 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.167765855789
+sequence.264.seg6-L0.svc
+[7, 0, 0]
+20:53:12.542382	est BW: [875.3515185 Kb/s] | T seg: [0.2265 s] | T sec: [0.2265 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.77347493172
+----------------
+20:53:13 rate 140kbit
+sequence.264.seg7-L0.svc
+----------------
+20:53:15 rate 116kbit
+[8, 0, 0]
+20:53:15.849991	est BW: [128.426224957 Kb/s] | T seg: [1.5319 s] | T sec: [1.5319 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.468052864075
+sequence.264.seg8-L0.svc
+----------------
+20:53:17 rate 944kbit
+[9, 0, 0]
+20:53:18.713205	est BW: [86.3764791284 Kb/s] | T seg: [2.3943 s] | T sec: [2.3943 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg9-L0.svc
+[10, 0, 0]
+20:53:18.977315	est BW: [776.911707237 Kb/s] | T seg: [0.2638 s] | T sec: [0.2638 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.73619508743
+----------------
+20:53:19 rate 126kbit
+sequence.264.seg10-L0.svc
+----------------
+20:53:21 rate 367kbit
+[11, 0, 0]
+20:53:22.375228	est BW: [116.400268225 Kb/s] | T seg: [1.6604 s] | T sec: [1.6604 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.339579105377
+sequence.264.seg11-L0.svc
+[12, 0, 0]
+20:53:23.302152	est BW: [345.233895682 Kb/s] | T seg: [0.5866 s] | T sec: [0.5866 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.41339588165
+----------------
+20:53:23 rate 122kbit
+sequence.264.seg12-L0.svc
+----------------
+20:53:25 rate 911kbit
+[13, 0, 0]
+20:53:26.421897	est BW: [112.904803966 Kb/s] | T seg: [1.7046 s] | T sec: [1.7046 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.295439004898
+sequence.264.seg13-L0.svc
+[14, 0, 0]
+20:53:26.951622	est BW: [850.860610267 Kb/s] | T seg: [0.2336 s] | T sec: [0.2336 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.7664129734
+----------------
+20:53:27 rate 119kbit
+sequence.264.seg14-L0.svc
+----------------
+20:53:29 rate 362kbit
+[15, 0, 0]
+20:53:30.550279	est BW: [109.882807456 Kb/s] | T seg: [1.8301 s] | T sec: [1.8301 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.169854164124
+sequence.264.seg15-L0.svc
+[16, 0, 0]
+20:53:31.308883	est BW: [340.54080137 Kb/s] | T seg: [0.5882 s] | T sec: [0.5882 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.4118270874
+----------------
+20:53:31 rate 137kbit
+sequence.264.seg16-L0.svc
+----------------
+20:53:33 rate 375kbit
+[17, 0, 0]
+20:53:34.246482	est BW: [126.501520617 Kb/s] | T seg: [1.524 s] | T sec: [1.524 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.475994110107
+sequence.264.seg17-L0.svc
+[18, 0, 0]
+20:53:35.294600	est BW: [352.799234369 Kb/s] | T seg: [0.5712 s] | T sec: [0.5712 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.42876505852
+----------------
+20:53:35 rate 135kbit
+sequence.264.seg18-L0.svc
+----------------
+20:53:37 rate 365kbit
+[19, 0, 0]
+20:53:38.280588	est BW: [124.689275288 Kb/s] | T seg: [1.5554 s] | T sec: [1.5554 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.444571018219
+sequence.264.seg19-L0.svc
+[20, 0, 0]
+20:53:39.309704	est BW: [344.302152472 Kb/s] | T seg: [0.5837 s] | T sec: [0.5837 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.41632390022
+----------------
+20:53:39 rate 107kbit
+sequence.264.seg20-L0.svc
+----------------
+20:53:41 rate 383kbit
+[21, 0, 0]
+20:53:42.734445	est BW: [98.7084234242 Kb/s] | T seg: [2.0065 s] | T sec: [2.0065 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg21-L0.svc
+[22, 0, 0]
+20:53:43.395685	est BW: [306.061378799 Kb/s] | T seg: [0.6609 s] | T sec: [0.6609 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.33905720711
+----------------
+20:53:43 rate 119kbit
+sequence.264.seg22-L0.svc
+----------------
+20:53:45 rate 371kbit
+[23, 0, 0]
+20:53:46.537372	est BW: [110.108104144 Kb/s] | T seg: [1.8009 s] | T sec: [1.8009 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.199141979218
+sequence.264.seg23-L0.svc
+[24, 0, 0]
+20:53:47.301246	est BW: [348.742772812 Kb/s] | T seg: [0.5641 s] | T sec: [0.5641 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.43585300446
+----------------
+20:53:47 rate 126kbit
+sequence.264.seg24-L0.svc
+----------------
+20:53:49 rate 930kbit
+[25, 0, 0]
+20:53:50.510287	est BW: [116.755481024 Kb/s] | T seg: [1.7713 s] | T sec: [1.7713 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.228669881821
+sequence.264.seg25-L0.svc
+[26, 0, 0]
+20:53:50.975096	est BW: [870.266892357 Kb/s] | T seg: [0.2355 s] | T sec: [0.2355 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.76449394226
+----------------
+20:53:51 rate 147kbit
+sequence.264.seg26-L0.svc
+----------------
+20:53:53 rate 352kbit
+[27, 0, 0]
+20:53:54.164925	est BW: [135.676068872 Kb/s] | T seg: [1.4245 s] | T sec: [1.4245 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.575478792191
+sequence.264.seg27-L0.svc
+[28, 0, 0]
+20:53:55.354866	est BW: [330.107991267 Kb/s] | T seg: [0.6135 s] | T sec: [0.6135 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.38651704788
+----------------
+20:53:55 rate 107kbit
+sequence.264.seg28-L0.svc
+----------------
+20:53:57 rate 906kbit
+[29, 0, 0]
+20:53:58.692536	est BW: [98.7266682885 Kb/s] | T seg: [1.9494 s] | T sec: [1.9494 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.05064702034
+sequence.264.seg29-L0.svc
+[30, 0, 0]
+20:53:58.978206	est BW: [847.276870428 Kb/s] | T seg: [0.2346 s] | T sec: [0.2346 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 1.76542496681
+----------------
+20:53:59 rate 131kbit
+sequence.264.seg30-L0.svc
+----------------
+20:54:01 rate 927kbit
+[31, 0, 0]
+20:54:02.405186	est BW: [121.188749351 Kb/s] | T seg: [1.6594 s] | T sec: [1.6594 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+		wait 0.34059214592
+sequence.264.seg31-L0.svc
+[32, 0, 0]
+20:54:03.131714	est BW: [519.994988871 Kb/s] | T seg: [0.3852 s] | T sec: [0.3852 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+62.9419720173
+------------------------ LAYER OVER -------------------------
+1
+sequence.264.seg0-L16.svc
+[32, 1, 0]
+20:54:03.706233	est BW: [883.676524171 Kb/s] | T seg: [0.5743 s] | T sec: [0.5743 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg1-L16.svc
+----------------
+20:54:03 rate 148kbit
+[32, 2, 0]
+20:54:04.980644	est BW: [366.693201238 Kb/s] | T seg: [1.2742 s] | T sec: [1.2742 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg2-L16.svc
+----------------
+20:54:05 rate 941kbit
+[32, 3, 0]
+20:54:07.779405	est BW: [171.267967811 Kb/s] | T seg: [2.7984 s] | T sec: [2.7984 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg3-L16.svc
+----------------
+20:54:07 rate 120kbit
+[32, 4, 0]
+20:54:09.303519	est BW: [313.963213344 Kb/s] | T seg: [1.5238 s] | T sec: [1.5238 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg4-L16.svc
+----------------
+20:54:09 rate 376kbit
+----------------
+20:54:12 rate 100kbit
+[32, 5, 0]
+20:54:12.280707	est BW: [165.784293292 Kb/s] | T seg: [2.9769 s] | T sec: [2.9769 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg5-L16.svc
+----------------
+20:54:14 rate 904kbit
+----------------
+20:54:16 rate 123kbit
+[32, 6, 0]
+20:54:16.965236	est BW: [98.4991570213 Kb/s] | T seg: [4.6842 s] | T sec: [4.6842 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg6-L16.svc
+----------------
+20:54:18 rate 375kbit
+----------------
+20:54:20 rate 112kbit
+[32, 7, 0]
+20:54:20.378765	est BW: [146.890650104 Kb/s] | T seg: [3.4132 s] | T sec: [3.4132 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg7-L16.svc
+----------------
+20:54:22 rate 940kbit
+----------------
+20:54:24 rate 101kbit
+[32, 8, 0]
+20:54:24.590771	est BW: [117.860287986 Kb/s] | T seg: [4.2117 s] | T sec: [4.2117 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg8-L16.svc
+----------------
+20:54:26 rate 371kbit
+[32, 9, 0]
+20:54:28.030540	est BW: [133.704106528 Kb/s] | T seg: [3.4395 s] | T sec: [3.4395 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg9-L16.svc
+----------------
+20:54:28 rate 143kbit
+----------------
+20:54:30 rate 357kbit
+----------------
+20:54:32 rate 125kbit
+[32, 10, 0]
+20:54:32.367832	est BW: [106.315754985 Kb/s] | T seg: [4.337 s] | T sec: [4.337 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg10-L16.svc
+----------------
+20:54:34 rate 398kbit
+----------------
+20:54:36 rate 124kbit
+[32, 11, 0]
+20:54:36.638750	est BW: [120.424040786 Kb/s] | T seg: [4.2707 s] | T sec: [4.2707 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg11-L16.svc
+----------------
+20:54:38 rate 395kbit
+----------------
+20:54:40 rate 110kbit
+[32, 12, 0]
+20:54:40.510528	est BW: [120.135988702 Kb/s] | T seg: [3.8715 s] | T sec: [3.8715 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg12-L16.svc
+----------------
+20:54:42 rate 369kbit
+----------------
+20:54:44 rate 129kbit
+[32, 13, 0]
+20:54:44.800823	est BW: [113.804531161 Kb/s] | T seg: [4.29 s] | T sec: [4.29 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg13-L16.svc
+----------------
+20:54:46 rate 935kbit
+----------------
+20:54:48 rate 107kbit
+[32, 14, 0]
+20:54:48.916359	est BW: [121.536846887 Kb/s] | T seg: [4.1152 s] | T sec: [4.1152 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg14-L16.svc
+----------------
+20:54:50 rate 910kbit
+----------------
+20:54:52 rate 115kbit
+[32, 15, 0]
+20:54:52.601379	est BW: [134.591678401 Kb/s] | T seg: [3.6848 s] | T sec: [3.6848 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg15-L16.svc
+----------------
+20:54:54 rate 376kbit
+----------------
+20:54:56 rate 116kbit
+[32, 16, 0]
+20:54:56.888312	est BW: [115.937713417 Kb/s] | T seg: [4.2867 s] | T sec: [4.2867 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg16-L16.svc
+----------------
+20:54:58 rate 390kbit
+----------------
+20:55:00 rate 132kbit
+[32, 17, 0]
+20:55:00.875063	est BW: [127.292292559 Kb/s] | T seg: [3.9865 s] | T sec: [3.9865 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg17-L16.svc
+----------------
+20:55:02 rate 924kbit
+----------------
+20:55:04 rate 141kbit
+[32, 18, 0]
+20:55:04.413627	est BW: [132.046785911 Kb/s] | T seg: [3.5383 s] | T sec: [3.5383 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg18-L16.svc
+----------------
+20:55:06 rate 922kbit
+[32, 19, 0]
+20:55:08.083340	est BW: [130.616133767 Kb/s] | T seg: [3.6694 s] | T sec: [3.6694 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg19-L16.svc
+----------------
+20:55:08 rate 138kbit
+[32, 20, 0]
+20:55:09.539074	est BW: [328.714199854 Kb/s] | T seg: [1.4555 s] | T sec: [1.4555 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg20-L16.svc
+----------------
+20:55:10 rate 910kbit
+[32, 21, 0]
+20:55:12.093581	est BW: [193.221949812 Kb/s] | T seg: [2.5542 s] | T sec: [2.5542 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg21-L16.svc
+----------------
+20:55:12 rate 132kbit
+[32, 22, 0]
+20:55:13.461470	est BW: [337.366564213 Kb/s] | T seg: [1.3676 s] | T sec: [1.3676 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg22-L16.svc
+----------------
+20:55:14 rate 350kbit
+----------------
+20:55:16 rate 137kbit
+[32, 23, 0]
+20:55:16.421524	est BW: [169.393220522 Kb/s] | T seg: [2.9598 s] | T sec: [2.9598 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg23-L16.svc
+----------------
+20:55:18 rate 116kbit
+[32, 24, 0]
+20:55:20.333614	est BW: [126.907157092 Kb/s] | T seg: [3.9114 s] | T sec: [3.9114 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg24-L16.svc
+----------------
+20:55:20 rate 101kbit
+----------------
+20:55:22 rate 367kbit
+----------------
+20:55:24 rate 124kbit
+[32, 25, 0]
+20:55:25.064302	est BW: [97.2158477428 Kb/s] | T seg: [4.7305 s] | T sec: [4.7305 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg25-L16.svc
+----------------
+20:55:26 rate 380kbit
+----------------
+20:55:28 rate 100kbit
+[32, 26, 0]
+20:55:28.842327	est BW: [122.056734872 Kb/s] | T seg: [3.7777 s] | T sec: [3.7777 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg26-L16.svc
+----------------
+20:55:30 rate 901kbit
+----------------
+20:55:32 rate 115kbit
+----------------
+20:55:34 rate 932kbit
+[32, 27, 0]
+20:55:35.438472	est BW: [77.9719314234 Kb/s] | T seg: [6.5958 s] | T sec: [6.5958 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg27-L16.svc
+----------------
+20:55:36 rate 144kbit
+----------------
+20:55:38 rate 368kbit
+----------------
+20:55:40 rate 118kbit
+----------------
+20:55:42 rate 396kbit
+[32, 28, 0]
+20:55:43.460290	est BW: [57.9844260251 Kb/s] | T seg: [8.0213 s] | T sec: [8.0213 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg28-L16.svc
+----------------
+20:55:44 rate 129kbit
+[32, 29, 0]
+20:55:44.801481	est BW: [364.088953623 Kb/s] | T seg: [1.341 s] | T sec: [1.341 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg29-L16.svc
+----------------
+20:55:46 rate 910kbit
+----------------
+20:55:48 rate 108kbit
+[32, 30, 0]
+20:55:48.863099	est BW: [123.150075489 Kb/s] | T seg: [4.0613 s] | T sec: [4.0613 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg30-L16.svc
+----------------
+20:55:50 rate 380kbit
+----------------
+20:55:52 rate 140kbit
+[32, 31, 0]
+20:55:53.304371	est BW: [111.673844991 Kb/s] | T seg: [4.4409 s] | T sec: [4.4409 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg31-L16.svc
+----------------
+20:55:54 rate 365kbit
+----------------
+20:55:56 rate 123kbit
+[32, 32, 0]
+20:55:56.649658	est BW: [148.579550079 Kb/s] | T seg: [3.345 s] | T sec: [3.345 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+176.45995307
+------------------------ LAYER OVER -------------------------
+2
+sequence.264.seg0-L32.svc
+----------------
+20:55:58 rate 119kbit
+----------------
+20:56:00 rate 359kbit
+----------------
+20:56:02 rate 123kbit
+[32, 32, 1]
+20:56:04.190171	est BW: [132.877048981 Kb/s] | T seg: [7.5401 s] | T sec: [7.5401 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg1-L32.svc
+----------------
+20:56:04 rate 384kbit
+----------------
+20:56:06 rate 132kbit
+----------------
+20:56:08 rate 918kbit
+[32, 32, 2]
+20:56:08.984308	est BW: [216.346608574 Kb/s] | T seg: [4.7938 s] | T sec: [4.7938 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg2-L32.svc
+[32, 32, 3]
+20:56:10.183881	est BW: [876.12729669 Kb/s] | T seg: [1.1992 s] | T sec: [1.1992 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg3-L32.svc
+----------------
+20:56:10 rate 146kbit
+----------------
+20:56:12 rate 936kbit
+[32, 32, 4]
+20:56:14.342406	est BW: [270.048833563 Kb/s] | T seg: [4.1582 s] | T sec: [4.1582 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg4-L32.svc
+----------------
+20:56:14 rate 101kbit
+----------------
+20:56:16 rate 370kbit
+----------------
+20:56:18 rate 107kbit
+[32, 32, 5]
+20:56:19.615342	est BW: [191.03735609 Kb/s] | T seg: [5.2726 s] | T sec: [5.2726 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg5-L32.svc
+----------------
+20:56:20 rate 945kbit
+----------------
+20:56:22 rate 112kbit
+----------------
+20:56:24 rate 395kbit
+[32, 32, 6]
+20:56:26.257484	est BW: [157.474988405 Kb/s] | T seg: [6.6418 s] | T sec: [6.6418 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg6-L32.svc
+----------------
+20:56:26 rate 100kbit
+----------------
+20:56:28 rate 381kbit
+----------------
+20:56:30 rate 143kbit
+[32, 32, 7]
+20:56:32.407543	est BW: [159.291000021 Kb/s] | T seg: [6.1497 s] | T sec: [6.1497 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg7-L32.svc
+----------------
+20:56:32 rate 389kbit
+----------------
+20:56:34 rate 384kbit
+[32, 32, 8]
+20:56:36.237755	est BW: [289.187524317 Kb/s] | T seg: [3.8299 s] | T sec: [3.8299 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg8-L32.svc
+----------------
+20:56:36 rate 145kbit
+----------------
+20:56:38 rate 367kbit
+----------------
+20:56:40 rate 131kbit
+[32, 32, 9]
+20:56:41.786775	est BW: [205.62011608 Kb/s] | T seg: [5.5487 s] | T sec: [5.5487 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg9-L32.svc
+----------------
+20:56:42 rate 943kbit
+----------------
+20:56:44 rate 147kbit
+----------------
+20:56:46 rate 917kbit
+[32, 32, 10]
+20:56:47.175035	est BW: [212.129867978 Kb/s] | T seg: [5.388 s] | T sec: [5.388 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg10-L32.svc
+[32, 32, 11]
+20:56:48.323949	est BW: [874.691239633 Kb/s] | T seg: [1.1486 s] | T sec: [1.1486 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg11-L32.svc
+----------------
+20:56:48 rate 103kbit
+----------------
+20:56:50 rate 366kbit
+[32, 32, 12]
+20:56:52.635402	est BW: [242.034305374 Kb/s] | T seg: [4.3111 s] | T sec: [4.3111 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg12-L32.svc
+----------------
+20:56:52 rate 103kbit
+----------------
+20:56:54 rate 367kbit
+----------------
+20:56:56 rate 101kbit
+----------------
+20:56:58 rate 351kbit
+----------------
+20:57:00 rate 141kbit
+[32, 32, 13]
+20:57:01.383585	est BW: [127.283453838 Kb/s] | T seg: [8.7478 s] | T sec: [8.7478 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg13-L32.svc
+----------------
+20:57:02 rate 354kbit
+----------------
+20:57:04 rate 107kbit
+----------------
+20:57:06 rate 946kbit
+----------------
+20:57:08 rate 100kbit
+[32, 32, 14]
+20:57:09.407153	est BW: [135.53218487 Kb/s] | T seg: [8.0232 s] | T sec: [8.0232 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg14-L32.svc
+----------------
+20:57:10 rate 942kbit
+----------------
+20:57:12 rate 131kbit
+----------------
+20:57:14 rate 368kbit
+[32, 32, 15]
+20:57:16.645476	est BW: [141.983713125 Kb/s] | T seg: [7.238 s] | T sec: [7.238 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg15-L32.svc
+----------------
+20:57:16 rate 103kbit
+----------------
+20:57:18 rate 944kbit
+----------------
+20:57:20 rate 145kbit
+[32, 32, 16]
+20:57:21.139897	est BW: [230.192179527 Kb/s] | T seg: [4.4941 s] | T sec: [4.4941 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg16-L32.svc
+----------------
+20:57:22 rate 389kbit
+----------------
+20:57:24 rate 117kbit
+----------------
+20:57:26 rate 365kbit
+[32, 32, 17]
+20:57:28.134004	est BW: [143.257390235 Kb/s] | T seg: [6.9937 s] | T sec: [6.9937 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg17-L32.svc
+----------------
+20:57:28 rate 125kbit
+----------------
+20:57:30 rate 904kbit
+----------------
+20:57:33 rate 117kbit
+[32, 32, 18]
+20:57:33.597403	est BW: [189.84239962 Kb/s] | T seg: [5.463 s] | T sec: [5.463 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg18-L32.svc
+----------------
+20:57:35 rate 382kbit
+----------------
+20:57:37 rate 137kbit
+----------------
+20:57:39 rate 354kbit
+[32, 32, 19]
+20:57:40.655551	est BW: [148.86328008 Kb/s] | T seg: [7.0578 s] | T sec: [7.0578 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg19-L32.svc
+----------------
+20:57:41 rate 128kbit
+----------------
+20:57:43 rate 945kbit
+----------------
+20:57:45 rate 145kbit
+----------------
+20:57:47 rate 124kbit
+[32, 32, 20]
+20:57:47.468438	est BW: [164.828677342 Kb/s] | T seg: [6.8126 s] | T sec: [6.8126 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg20-L32.svc
+----------------
+20:57:49 rate 358kbit
+----------------
+20:57:51 rate 110kbit
+----------------
+20:57:53 rate 142kbit
+----------------
+20:57:55 rate 378kbit
+[32, 32, 21]
+20:57:55.779506	est BW: [121.198747972 Kb/s] | T seg: [8.3108 s] | T sec: [8.3108 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg21-L32.svc
+----------------
+20:57:57 rate 131kbit
+----------------
+20:57:59 rate 361kbit
+[32, 32, 22]
+20:58:00.561880	est BW: [218.716208181 Kb/s] | T seg: [4.7821 s] | T sec: [4.7821 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg22-L32.svc
+----------------
+20:58:01 rate 147kbit
+----------------
+20:58:03 rate 946kbit
+----------------
+20:58:05 rate 107kbit
+[32, 32, 23]
+20:58:05.824601	est BW: [186.149511524 Kb/s] | T seg: [5.2624 s] | T sec: [5.2624 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg23-L32.svc
+----------------
+20:58:07 rate 948kbit
+----------------
+20:58:09 rate 131kbit
+----------------
+20:58:11 rate 946kbit
+----------------
+20:58:13 rate 114kbit
+[32, 32, 24]
+20:58:13.378713	est BW: [146.623098124 Kb/s] | T seg: [7.5538 s] | T sec: [7.5538 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg24-L32.svc
+----------------
+20:58:15 rate 109kbit
+----------------
+20:58:17 rate 921kbit
+----------------
+20:58:19 rate 132kbit
+----------------
+20:58:21 rate 399kbit
+[32, 32, 25]
+20:58:22.223135	est BW: [129.002991201 Kb/s] | T seg: [8.8441 s] | T sec: [8.8441 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg25-L32.svc
+----------------
+20:58:23 rate 123kbit
+----------------
+20:58:25 rate 949kbit
+----------------
+20:58:27 rate 109kbit
+[32, 32, 26]
+20:58:28.431818	est BW: [184.098731721 Kb/s] | T seg: [6.2083 s] | T sec: [6.2083 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg26-L32.svc
+----------------
+20:58:29 rate 379kbit
+----------------
+20:58:31 rate 108kbit
+----------------
+20:58:33 rate 395kbit
+[32, 32, 27]
+20:58:35.172506	est BW: [149.049017151 Kb/s] | T seg: [6.7403 s] | T sec: [6.7403 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg27-L32.svc
+----------------
+20:58:35 rate 372kbit
+----------------
+20:58:37 rate 121kbit
+[32, 32, 28]
+20:58:38.243456	est BW: [339.810729089 Kb/s] | T seg: [3.0706 s] | T sec: [3.0706 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg28-L32.svc
+----------------
+20:58:39 rate 373kbit
+----------------
+20:58:41 rate 131kbit
+----------------
+20:58:43 rate 930kbit
+----------------
+20:58:45 rate 106kbit
+[32, 32, 29]
+20:58:45.780769	est BW: [147.731505752 Kb/s] | T seg: [7.537 s] | T sec: [7.537 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg29-L32.svc
+----------------
+20:58:47 rate 940kbit
+----------------
+20:58:49 rate 132kbit
+----------------
+20:58:51 rate 380kbit
+----------------
+20:58:53 rate 364kbit
+[32, 32, 30]
+20:58:53.639152	est BW: [138.380664886 Kb/s] | T seg: [7.858 s] | T sec: [7.858 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg30-L32.svc
+----------------
+20:58:55 rate 109kbit
+[32, 32, 31]
+20:58:57.303584	est BW: [280.472252537 Kb/s] | T seg: [3.6641 s] | T sec: [3.6641 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+sequence.264.seg31-L32.svc
+----------------
+20:58:57 rate 905kbit
+----------------
+20:58:59 rate 115kbit
+[32, 32, 32]
+20:58:59.616214	est BW: [447.385391897 Kb/s] | T seg: [2.3123 s] | T sec: [2.3123 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]
+359.426504135
+------------------------ LAYER OVER -------------------------
+3
+ 
+total time: 359.426578045 s
+total wait time 27.1206953526 s
+[32, 32, 32]
+--- END --- 
+----------------
+20:59:01 rate 384kbit
+----------------
+20:59:03 rate 144kbit

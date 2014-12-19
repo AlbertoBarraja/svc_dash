@@ -1,0 +1,62 @@
+02:11:31 rate 3438 kbit
+02:11:32.250669	.mpd file sent successfully
+02:11:32.292057	seg [0,0] | thr: [193.6094Kb/s] | est BW: [4720.1284 Kb/s] | T seg: [0.0404 s] | T sec: [0.0404 s] | T frc seg: [0.0098 s] | T frc sec: [0.0502 s]  [1, 0, 0]
+02:11:32.324056	seg [0,1] | thr: [193.6094Kb/s] | est BW: [11785.6507 Kb/s] | T seg: [0.0315 s] | T sec: [0.0719 s] | T frc seg: [0.0095 s] | T frc sec: [0.0814 s] [1, 1, 0]
+02:11:32.528013	seg [0,2] | thr: [193.6094Kb/s] | est BW: [4417.8112 Kb/s] | T seg: [0.2034 s] | T sec: [0.2753 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]		[1, 1, 1]
+wait 1.72472429276
+02:11:33 rate 1957 kbit
+02:11:34.320093	seg [1,0] | thr: [193.6094Kb/s] | est BW: [8981.1177 Kb/s] | T seg: [0.0649 s] | T sec: [0.0649 s] | T frc seg: [0.0718 s] | T frc sec: [0.1367 s]  [2, 1, 1]
+02:11:35 rate 1924 kbit
+02:11:36.085906	seg [1,1] | thr: [193.6094Kb/s] | est BW: [2921.7733 Kb/s] | T seg: [1.765 s] | T sec: [1.8299 s] | T frc seg: [0.2039 s] | T frc sec: [2.0339 s]   [2, 2, 1]
+02:11:37 rate 234 kbit
+02:11:38.527081	seg [1,2] | thr: [193.6094Kb/s] | est BW: [1953.2714 Kb/s] | T seg: [2.4405 s] | T sec: [4.2704 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]		[2, 2, 2]
+02:11:39 rate 1907 kbit
+02:11:41 rate 3464 kbit
+02:11:42.445337	seg [2,0] | thr: [193.6094Kb/s] | est BW: [53.0744 Kb/s] | T seg: [3.9178 s] | T sec: [3.9178 s] | T frc seg: [3.5654 s] | T frc sec: [7.4832 s]	[3, 2, 2]
+02:11:42.576632	seg [3,0] | thr: [193.6094Kb/s] | est BW: [4562.6843 Kb/s] | T seg: [0.1308 s] | T sec: [0.1308 s] | T frc seg: [0.0415 s] | T frc sec: [0.1723 s]  [4, 2, 2]
+02:11:42.806738	seg [3,1] | thr: [193.6094Kb/s] | est BW: [6592.6239 Kb/s] | T seg: [0.2296 s] | T sec: [0.3604 s] | T frc seg: [0.024 s] | T frc sec: [0.3844 s]   [4, 3, 2]
+02:11:43 rate 1552 kbit
+02:11:43.069549	seg [3,2] | thr: [193.6094Kb/s] | est BW: [4816.8761 Kb/s] | T seg: [0.2623 s] | T sec: [0.6227 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s] 		[4, 3, 3]
+wait 1.37728333473
+02:11:44.529968	seg [4,0] | thr: [193.6094Kb/s] | est BW: [8861.6706 Kb/s] | T seg: [0.0812 s] | T sec: [0.0812 s] | T frc seg: [0.069 s] | T frc sec: [0.1501 s]	[5, 3, 3]
+02:11:45 rate 238 kbit
+02:11:47 rate 242 kbit
+02:11:49 rate 202 kbit
+02:11:49.638947	seg [4,1] | thr: [193.6094Kb/s] | est BW: [956.9727 Kb/s] | T seg: [5.1081 s] | T sec: [5.1893 s] | T frc seg: [0.7752 s] | T frc sec: [5.9645 s]	[6, 3, 3]
+02:11:51 rate 234 kbit
+02:11:52.385568	seg [5,0] | thr: [193.6094Kb/s] | est BW: [67.5184 Kb/s] | T seg: [2.7461 s] | T sec: [2.7461 s] | T frc seg: [10.4041 s] | T frc sec: [13.1502 s]  [6, 4, 3]
+02:11:53 rate 1787 kbit
+02:11:53.238930	seg [6,0] | thr: [193.6094Kb/s] | est BW: [112.0079 Kb/s] | T seg: [0.8529 s] | T sec: [0.8529 s] | T frc seg: [6.2716 s] | T frc sec: [7.1245 s]   [7, 4, 3]
+02:11:55 rate 3276 kbit
+02:11:56.463650	seg [6,1] | thr: [193.6094Kb/s] | est BW: [1743.1663 Kb/s] | T seg: [3.2239 s] | T sec: [4.0768 s] | T frc seg: [0.4256 s] | T frc sec: [4.5023 s]  [7, 5, 3]
+02:11:56.848284	seg [7,0] | thr: [193.6094Kb/s] | est BW: [287.4718 Kb/s] | T seg: [0.3841 s] | T sec: [0.3841 s] | T frc seg: [0.2899 s] | T frc sec: [0.674 s]    [8, 5, 3]
+02:11:56.932057	seg [7,1] | thr: [193.6094Kb/s] | est BW: [8006.0549 Kb/s] | T seg: [0.0833 s] | T sec: [0.4674 s] | T frc seg: [0.0927 s] | T frc sec: [0.5601 s]  [8, 6, 3]
+02:11:57 rate 1554 kbit
+02:11:58.242062	seg [7,2] | thr: [193.6094Kb/s] | est BW: [4533.4932 Kb/s] | T seg: [1.3091 s] | T sec: [1.7765 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]		[8, 6, 4]
+wait 0.223471164703
+02:11:59 rate 1726 kbit
+02:11:59.117632	seg [8,0] | thr: [193.6094Kb/s] | est BW: [956.4033 Kb/s] | T seg: [0.6513 s] | T sec: [0.6513 s] | T frc seg: [0.0363 s] | T frc sec: [0.6876 s]   [9, 6, 4]
+02:11:59.450175	seg [8,1] | thr: [193.6094Kb/s] | est BW: [835.226 Kb/s] | T seg: [0.3321 s] | T sec: [0.9834 s] | T frc seg: [0.8332 s] | T frc sec: [1.8165 s]    [9, 7, 4]
+02:12:01 rate 217  kbit
+02:12:01.736108	seg [8,2] | thr: [193.6094Kb/s] | est BW: [2436.2107 Kb/s] | T seg: [2.2851 s] | T sec: [3.2685 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]        [9, 7, 5]
+02:12:03 rate 1612 kbit
+02:12:03.923702	seg [9,0] | thr: [193.6094Kb/s] | est BW: [256.0835 Kb/s] | T seg: [2.1871 s] | T sec: [2.1871 s] | T frc seg: [0.1866 s] | T frc sec: [2.3737 s]   [10,7, 5]
+02:12:05 rate 1741 kbit
+02:12:05.335776	seg [7,1] | thr: [1436.1094Kb/s] | est BW: [270.9667 Kb/s] | T seg: [1.411 s] | T sec: [1.411 s] | T frc seg: [1.0158 s] | T frc sec: [2.4268 s]    [10,8, 5]
+02:12:07 rate 3165 kbit
+02:12:07.018688	seg [8,1] | thr: [1436.1094Kb/s] | est BW: [2568.3688 Kb/s] | T seg: [1.6821 s] | T sec: [1.6821 s] | T frc seg: [0.1072 s] | T frc sec: [1.7893 s] [10,9, 5]
+02:12:07.840317	seg [9,1] | thr: [1436.1094Kb/s] | est BW: [2013.8835 Kb/s] | T seg: [0.821 s] | T sec: [0.821 s] | T frc seg: [0.1367 s] | T frc sec: [0.9577 s]   [10,10,5]
+02:12:08.275683	seg [5,2] | thr: [3028.9258Kb/s] | est BW: [5065.3246 Kb/s] | T seg: [0.4347 s] | T sec: [0.4347 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]       [10,10,6]
+02:12:08.563235	seg [6,2] | thr: [3028.9258Kb/s] | est BW: [3654.4993 Kb/s] | T seg: [0.287 s] | T sec: [0.287 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]			[10,10,7]
+02:12:08.850842	seg [7,2] | thr: [3028.9258Kb/s] | est BW: [4667.0877 Kb/s] | T seg: [0.2871 s] | T sec: [0.2871 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]		[10,10,8]
+02:12:09 rate 1657kbit
+02:12:09.798287	seg [8,2] | thr: [3028.9258Kb/s] | est BW: [4481.4069 Kb/s] | T seg: [0.9468 s] | T sec: [0.9468 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]		[10,10,9]
+02:12:11 rate 1657 kbit
+02:12:11.574727	seg [9,2] | thr: [3028.9258Kb/s] | est BW: [2586.1906 Kb/s] | T seg: [1.7757 s] | T sec: [1.7757 s] | T frc seg: [0.0 s] | T frc sec: [0.0 s]		[10,10,10]
+02:12:13 rate 3499 kbit
+
+later 1: 31.6725578308 s
+layer 2: 35.5891468525 s
+layer 3: 39.3235228062 s
+total time: 39.3235490322 s
+

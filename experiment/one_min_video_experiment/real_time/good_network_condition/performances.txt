@@ -1,0 +1,5 @@
+freezing time :	0 seconds
+quality changes: 22
+idle ratio: 55,2%
+time for upöoad all enhanched layer 1 chunks: 72.66  sec
+time for upöoad all enhanched layer 2 chunks: 106.86 sec
